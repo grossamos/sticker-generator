@@ -1,0 +1,19 @@
+services:
+  sticker-generator:
+    image: sticker-generator
+    volumes:
+     - ./static:/code/static
+    restart: unless-stopped
+    networks:
+      - "traefik_network"
+    labels:
+      - "traefik.enable=true"
+      - traefik.http.routers.homepage.entryPoints=websecure
+      - traefik.http.routers.homepage.rule=Host(`sticker.amosgross.com`)
+      - traefik.http.routers.homepage.tls=true
+      - traefik.http.routers.homepage.tls.certResolver=le
+
+networks:
+   traefik_network:
+     external: true
+

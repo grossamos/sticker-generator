@@ -1,0 +1,21 @@
+#login-form {
+  margin-top: 1.5rem;
+}
+
+.login-label {
+  margin-bottom: 0.2rem;
+  display: block;
+}
+
+.login-button {
+  color: white;
+  font-family: Outfit;
+  padding: 0.3rem;
+  width: 5rem;
+
+  background: #000000;
+  border-radius: 10px;
+  border-width: 0;
+  float: right;
+}
+

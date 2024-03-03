@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="index.css">
+  <title>Sticker Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <script src="login.js"></script>
+</head>
+<body>
+
+<div class="main-content">
+  <a class="login-text" href="/login.html">Login</a>
+  <h1 class="header">Generate Stickers</h1>
+  <p class="help-text">Like WhatsApp, but usable everywhere<p>
+  <form id="generate-form" class="input-field" onsubmit="return generate()">
+         <input id="generate-input" placeholder="Start typing..."/>
+         <button type="submit" id="go-button">Go!</button>
+         <div id="lds-dual-ring"></div>
+  </form>
+  <p id="error-text">Invalid username/password</p>
+  <div id="image-container">
+  </div>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html> 

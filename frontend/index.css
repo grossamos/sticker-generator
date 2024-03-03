@@ -1,0 +1,82 @@
+.login-text {
+  display: block;
+  text-decoration: none;
+  color: #4B4B4B;
+  float: right;
+}
+
+#generate-form {
+  height: 3rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+
+#generate-input {
+  flex-grow:2;
+  border:none;
+  font-family: Outfit;
+  font-size: 12pt;
+}
+
+#generate-input:focus {
+  outline: none;
+}
+
+
+#go-button {
+  color: white;
+  font-family: Outfit;
+  padding: 0.3rem;
+
+  background: #000000;
+  border-radius: 10px;
+  border-width: 0;
+  float: right;
+  width: 3rem;
+}
+
+.sticker {
+  width: 20rem;
+  max-width: 90vw;
+  display: block;
+  margin: auto;
+  height: 20rem;
+}
+
+
+#image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#lds-dual-ring {
+  display: inline-block;
+  width: 0.95rem;
+  height: 0.95rem;
+  margin-right: 1rem;
+  margin-top: 0.2rem;
+  display: none;
+}
+
+#lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 0.2rem solid white;
+  border-color: black transparent black transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

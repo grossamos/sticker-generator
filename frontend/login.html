@@ -1,0 +1,27 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="base.css">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <script src="login.js"></script>
+</head>
+<body>
+
+<div class="main-content">
+  <h1 class="header">Login</h1>
+  <p class="help-text">Contact the admin for credentails</p>
+  <form id="login-form" onsubmit="return login()">
+         <p id="error-text">Invalid username/password</p>
+         <label for="username" class="login-label">Username</label>
+         <input class="input-field" id="username" placeholder="Username"/>
+         <label for="password" class="login-label">Password</label>
+         <input class="input-field" id="password" type="password" placeholder="Password"/>
+
+         <button type="submit" class="login-button">Login</button>
+  </form>
+</div>
+
+</body>
+</html> 
